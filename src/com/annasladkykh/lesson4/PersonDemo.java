@@ -8,7 +8,7 @@ public class PersonDemo {
         group[0].setFirstName("Adam");
         group[0].setLastName("Jackson");
         group[0].setAge(25);
-        group[0].setGender('m');
+        //group[0].setGender('m');
         group[1] = new Person();
         group[1].setFirstName("Jack");
         group[2] = new Person();

@@ -4,9 +4,10 @@ public class Person {
     private String firstName;
     private String lastName;
     private int age;
-    private char gender;
+    //private char gender;
+    private Gender gender; // 'f', 'm'
 
-    public Person(String firstName, String lastName, int age, char gender) {
+    public Person(String firstName, String lastName, int age, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -28,7 +29,7 @@ public class Person {
         return age;
     }
 
-    public char getGender() {
+    public Gender getGender() {
         return gender;
     }
 
@@ -44,7 +45,7 @@ public class Person {
         this.age = age;
     }
 
-    public void setGender(char gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
