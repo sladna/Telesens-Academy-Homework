@@ -1,6 +1,7 @@
 package com.annasladkykh.lesson5.Hometask;
 
 import com.annasladkykh.lesson6.DateFormat;
+import com.annasladkykh.lesson8.hometask.IllegalDateException;
 
 import java.util.Objects;
 
@@ -13,6 +14,9 @@ public class CustomDate {
         this.day = day;
         this.month = month;
         this.year = year;
+        if (this.month < 1 || this.month > 12) {
+            throw new IllegalDateException();
+        }
     }
 
     public CustomDate() {
@@ -57,5 +61,13 @@ public class CustomDate {
             default:
                 return "we don't know such date format";
         }
+
     }
+
+//    public boolean validateMonth(int month) {
+//        if (month < 1 || month > 12) {
+//            throw new IllegalDateException();
+//        }
+//        return true;
+//    }
 }
